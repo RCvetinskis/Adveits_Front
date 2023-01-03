@@ -1,0 +1,51 @@
+.fixed {
+  position: fixed;
+}
+.h-80 {
+  max-height: 80vh;
+}
+// social
+.fa-brands {
+  color: black !important;
+  margin: 0.5em;
+}
+// btn with arrow
+
+// btn lets chat
+.btn-arrow {
+  background-color: transparent !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  border: none;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+  // custom arrow
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -20px;
+    z-index: 1;
+  }
+  &::after {
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    bottom: 7px;
+  }
+  &::before {
+    width: 16px;
+    height: 2px;
+    bottom: 10px;
+    background-color: black;
+  }
+}
